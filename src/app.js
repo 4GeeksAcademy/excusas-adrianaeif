@@ -17,10 +17,13 @@ window.onload = function() {
   let what = ["mi tarea", "mi casa", "mi té"];
   let when = ["antes de clase", "ayer", "esta semana"];
 
-  console.log(
+  let excusa =
     aleatoriolista(who) +
-      aleatoriolista(action) +
-      aleatoriolista(what) +
-      aleatoriolista(when)
-  );
+    aleatoriolista(action) +
+    aleatoriolista(what) +
+    aleatoriolista(when);
+
+  let elementExcuse = window.document.querySelector("#excuse");
+
+  elementExcuse.innerHTML = excusa;
 };
